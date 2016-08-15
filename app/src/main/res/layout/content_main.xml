@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context="app01.dam.isi.frsf.utn.edu.ar.app01.MainActivity"
+        tools:showIn="@layout/activity_main"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Aplicacion de Test 01"
+        android:id="@+id/txtTitulo"
+        android:capitalize="characters"
+        android:textColor="#dc0909" />
+
+    <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Ingrese un numero del 1 al 10"
+            android:id="@+id/textSubtitulo"
+        android:layout_weight="0.03" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/nroIngresado"
+            android:layout_below="@+id/textSubtitulo"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="37dp"
+            android:text="0" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Adivinar!"
+            android:id="@+id/btnAdivinar"
+            android:layout_alignTop="@+id/nroIngresado"
+            android:layout_toEndOf="@+id/nroIngresado" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/textViewRes"
+            android:layout_below="@+id/btnAdivinar"
+            android:layout_alignStart="@+id/btnAdivinar"
+            android:layout_alignEnd="@+id/textSubtitulo" />
+
+</LinearLayout>
